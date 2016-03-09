@@ -1,0 +1,98 @@
+/* line 6, ../../Private/Sass/style.scss */
+.bugcluster-github-tracker div.info {
+  background-color: #393838;
+  padding: 10px;
+  border: 1px solid #242424;
+}
+/* line 12, ../../Private/Sass/style.scss */
+.bugcluster-github-tracker ul {
+  display: none;
+  list-style: none;
+  padding: 10px;
+}
+/* line 17, ../../Private/Sass/style.scss */
+.bugcluster-github-tracker ul li {
+  display: flex;
+  margin: 0 0 5px 0;
+  font-size: 0.8em;
+}
+/* line 22, ../../Private/Sass/style.scss */
+.bugcluster-github-tracker ul li strong {
+  color: #8a8a8a;
+  padding: 0;
+  flex: 0 0 80px;
+  text-align: right;
+}
+/* line 29, ../../Private/Sass/style.scss */
+.bugcluster-github-tracker ul li a {
+  flex: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-decoration: none;
+}
+/* line 36, ../../Private/Sass/style.scss */
+.bugcluster-github-tracker ul li a:hover {
+  text-decoration: underline;
+}
+/* line 43, ../../Private/Sass/style.scss */
+.bugcluster-github-tracker .loader:before,
+.bugcluster-github-tracker .loader:after,
+.bugcluster-github-tracker .loader {
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation: load7 1.8s infinite ease-in-out;
+  animation: load7 1.8s infinite ease-in-out;
+}
+/* line 54, ../../Private/Sass/style.scss */
+.bugcluster-github-tracker .loader {
+  font-size: 5px;
+  margin: 80px auto;
+  position: relative;
+  text-indent: -9999em;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+/* line 65, ../../Private/Sass/style.scss */
+.bugcluster-github-tracker .loader:before {
+  left: -3.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+/* line 70, ../../Private/Sass/style.scss */
+.bugcluster-github-tracker .loader:after {
+  left: 3.5em;
+}
+/* line 73, ../../Private/Sass/style.scss */
+.bugcluster-github-tracker .loader:before,
+.bugcluster-github-tracker .loader:after {
+  content: '';
+  position: absolute;
+  top: 0;
+}
+@-webkit-keyframes load7 {
+  0%,
+    80%,
+    100% {
+    box-shadow: 0 2.5em 0 -1.3em #7a0e0e;
+  }
+  40% {
+    box-shadow: 0 2.5em 0 0 #7a0e0e;
+  }
+}
+@keyframes load7 {
+  0%,
+    80%,
+    100% {
+    box-shadow: 0 2.5em 0 -1.3em #7a0e0e;
+  }
+  40% {
+    box-shadow: 0 2.5em 0 0 #7a0e0e;
+  }
+}

@@ -1,0 +1,21 @@
+<html xmlns:f="http://typo3.org/ns/fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<f:layout name="Default"/>
+
+<f:section name="Main">
+
+    <div class="github-tracker-container" data-userName="{data.userName}" data-repository="{data.repository}" data-branch="{data.branch}">
+        <h2>Tracker</h2>
+        <div>
+            <div class="info">
+                <p><strong>Repository:</strong> {data.repository}</p>
+                <p><strong>Branch:</strong> {data.branch}</p>
+            </div>
+            <ul class="commits"></ul>
+            <div class="loader">Loading...</div>
+        </div>
+
+    </div>
+
+</f:section>

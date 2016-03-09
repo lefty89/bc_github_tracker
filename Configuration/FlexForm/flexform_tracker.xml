@@ -1,0 +1,26 @@
+<T3DataStructure>
+    <meta>
+        <langDisable>1</langDisable>
+    </meta>
+    <sheets>
+        <sDEF>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>GitHub Source</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+                    <settings.custom>
+                        <TCEforms>
+                            <exclude>0</exclude>
+                            <config>
+                                <type>user</type>
+                                <userFunc>BC\BcGithubTracker\FlexForm\RepoSelection->renderSelector</userFunc>
+                            </config>
+                        </TCEforms>
+                    </settings.custom>
+                </el>
+            </ROOT>
+        </sDEF>
+    </sheets>
+</T3DataStructure>

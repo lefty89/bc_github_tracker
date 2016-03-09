@@ -1,0 +1,35 @@
+<html xmlns:f="http://typo3.org/ns/fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<div ng-app="GitHubModule" ng-controller="GitHubController">
+    <input name="{fConfig.itemFormElID}" value="{{serializedValue}}" ng-init="initItems('{fConfig.itemFormElValue}')" type="hidden" />
+    <div class="row">
+        <div class="col-md-3">
+            <div class="form-group">
+                <label>Username</label>
+                <input type="text" class="form-control" ng-model="identifier.userName" ng-change="userNameChange()" ng-model-options='{ debounce: 1000 }'>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label>Repository</label>
+                <select class="form-control" ng-model="identifier.repository" ng-change="repoChange()" ng-disabled="repositories.length == 0">
+                    <option ng-repeat="r in repositories track by $index" value="{{r.name}}">{{r.name}}</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label>Branch</label>
+                <select class="form-control" ng-model="identifier.branch" ng-disabled="branches.length == 0">
+                    <option ng-repeat="b in branches track by $index" value="{{b.name}}">{{b.name}}</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+

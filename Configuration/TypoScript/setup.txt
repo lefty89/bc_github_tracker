@@ -1,0 +1,12 @@
+
+# extension settings
+plugin.tx_bcgithubtracker {
+	view {
+		templateRootPath = {$plugin.tx_bcgithubtracker.view.templateRootPath}
+		partialRootPath = {$plugin.tx_bcgithubtracker.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_bcgithubtracker.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_bcgithubtracker.persistence.storagePid}
+	}
+}
