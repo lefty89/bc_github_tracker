@@ -1,1 +1,1 @@
-# TYPO3 Extension: bc_code_highlighter
+# TYPO3 Extension: bc_github_tracker
